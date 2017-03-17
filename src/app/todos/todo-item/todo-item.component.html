@@ -1,0 +1,9 @@
+
+<div class="checkbox task-row">
+    <label>
+        <input type="checkbox" value="" class="done-checkbox" [checked]="todo.isDone" (change)="onUpdateTodo()">
+        {{todo.title}}
+    </label>
+    <i class="fa fa-times remove pull-right" aria-hidden="true" (click)="onDeleteTodo()"></i>
+    {{todo.isDone}}
+</div>                         

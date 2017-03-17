@@ -1,0 +1,9 @@
+#newTask {
+    position: relative; 
+}
+#newTask .error-message {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    color: red;
+}

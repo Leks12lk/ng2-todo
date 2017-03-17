@@ -1,0 +1,27 @@
+
+.task-row {   
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/*.task-row:last-child {      
+    border-bottom: none;
+}*/
+
+.task-row .remove {
+    display: none;
+    color: red;
+    transition: .7;
+    cursor: pointer;
+    font-size: 18px;
+}
+.task-row:hover .remove {
+    display: inline;    
+}
+
+.task-row.completed {    
+    color: #ddd;
+}
+.task-row.completed label {
+    text-decoration: line-through;
+}

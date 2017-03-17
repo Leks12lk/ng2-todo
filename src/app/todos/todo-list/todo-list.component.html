@@ -1,0 +1,12 @@
+
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+        <div class="panel panel-default mt40">
+            <div class="panel-body" id="tasks-container">                  
+                <div *ngFor="let todo of todos">
+                    <todo-item [todo]="todo" (updateTodo)="updateTodo($event)" (deleteTodo)="onDeleteTodo($event)"></todo-item>
+                </div>            
+            </div>
+        </div>
+    </div>
+</div>
